@@ -1,11 +1,6 @@
 [build]
 builder = "Dockerfile"
 
-[deploy]
-healthcheckPath = "/setup/healthz"
-healthcheckTimeout = 300
-restartPolicyType = "on_failure"
-
 [variables]
 # NOTE: Railway injects PORT automatically.
 # Do not set PORT here; Railway templates may not apply it reliably and hardcoding
