@@ -35,6 +35,4 @@ CMD ["anki-sync-server"]
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
     CMD wget -qO- http://127.0.0.1:8080/health || exit 1
 
-VOLUME /anki_data
-
 LABEL maintainer="Jean Khawand <jk@jeankhawand.com>"
